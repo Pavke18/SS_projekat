@@ -1,0 +1,20 @@
+Tabela simbola:
+Naziv          Vrednost       Sekcija        l/g  Velicina       
+UNDF           0              UNDEFINED      g    0              
+myCode         0              myCode         l    28             
+myCounter      0              myData         g    0              
+myData         0              myData         l    2              
+myStart        0              myCode         g    0              
+tim_cfg        65296          ABS            l    0              
+wait           10             myCode         l    0              
+
+Tabela realokacija
+[.myCode]
+Simbol         Sekcija        Offset    Tip  
+myCounter      myCode         13        ABS  
+myCode         myCode         25        ABS  
+
+Sadrzaj:
+myCode:a0 f0 00 00 00 b0 f0 40 10 00 a0 f0 40 00 00 a0 1f 00 00 00 74 10 52 ff 00 a0 00 00 
+myData:00 00 
+

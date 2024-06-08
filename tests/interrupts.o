@@ -1,0 +1,30 @@
+Tabela simbola:
+Naziv          Vrednost       Sekcija        l/g  Velicina       
+UNDF           0              UNDEFINED      g    0              
+asciiCode      84             ABS            l    0              
+isr            0              isr            l    69             
+isr_reset      0              isr            l    0              
+isr_terminal   22             isr            l    0              
+isr_timer      5              isr            l    0              
+ivt            0              ivt            l    16             
+myCounter      0              UNDEF          g    0              
+myStart        0              UNDEF          g    0              
+term_in        65282          ABS            l    0              
+term_out       65280          ABS            l    0              
+
+Tabela realokacija
+[.isr]
+Simbol         Sekcija        Offset    Tip  
+myStart        isr            3         ABS  
+myCounter      isr            48        PCREL
+myCounter      isr            60        ABS  
+[.ivt]
+Simbol         Sekcija        Offset    Tip  
+isr            ivt            0         ABS  
+isr            ivt            4         ABS  
+isr            ivt            6         ABS  
+
+Sadrzaj:
+isr:50 ff 00 00 00 b0 60 12 a0 f0 10 00 00 b0 f0 14 00 00 a0 60 42 20 b0 60 12 b0 16 12 a0 f0 14 20 00 a0 1f 00 00 00 70 10 b0 f0 40 00 00 a0 70 30 fe ff a0 1f 00 00 00 70 10 b0 f0 40 00 00 a0 16 42 a0 60 42 20 
+ivt:00 00 00 00 50 00 16 00 00 00 00 00 00 00 00 00 
+
